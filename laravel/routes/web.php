@@ -13,7 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'App\Http\Controllers\PagesController@index');
+Route::get('/team', 'App\Http\Controllers\PagesController@team');
+Route::get('/website-design', 'App\Http\Controllers\PagesController@web');
+Route::get('/social', 'App\Http\Controllers\PagesController@social');
+Route::get('/seo', 'App\Http\Controllers\PagesController@seo');
+Route::get('/video', 'App\Http\Controllers\PagesController@video');
+Route::get('/design', 'App\Http\Controllers\PagesController@design');
+Route::get('/church', 'App\Http\Controllers\PagesController@church');
+Route::get('/quote', 'App\Http\Controllers\PagesController@quote');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -1,6 +1,5 @@
 @extends('layouts.page')
 
 @section('content')
-
-<h1>Test Index</h1>
+<h1>Test Team</h1>
 @endsection
