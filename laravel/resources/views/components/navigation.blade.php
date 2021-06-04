@@ -2,7 +2,7 @@
   <div class="logo-wrap">
     <a href="/"><img src="/assets/logos/smart-marketing-logo.png" alt="Smart Marketing"></a>
   </div>
-  <div class="">
+  <div class="main-menu-wrap">
     <a href="/team">Team</a>
     <a href="/website-design">Web</a>
     <a href="/social">Social</a>
