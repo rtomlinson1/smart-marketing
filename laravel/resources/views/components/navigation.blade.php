@@ -1,6 +1,9 @@
-<nav>
+<nav class="">
   <div class="logo-wrap">
-    <a href="/"><img src="/assets/logos/smart-marketing-logo.png" alt="Smart Marketing"></a>
+    <a href="/"><img src="/images/smart-marketing-logo.png" alt="Smart Marketing"></a>
+  </div>
+  <div id="menu-open">
+    <img src="/images/menu-icon.png" alt="">
   </div>
   <div class="main-menu-wrap">
     <a href="/team">Team</a>

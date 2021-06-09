@@ -3801,6 +3801,21 @@ module.exports = {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
+/*Start Smart Marketing JS*/
+
+
+window.onload = function () {
+  /*Global Variables*/
+  var getNav = document.querySelector('nav');
+  var getNavButton = document.getElementById('menu-open');
+  /*Menu*/
+
+  function openMenu() {
+    getNav.classList.toggle('show-menu');
+  }
+
+  getNavButton.addEventListener("click", openMenu);
+};
 
 /***/ }),
 

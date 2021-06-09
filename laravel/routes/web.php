@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'App\Http\Controllers\PagesController@index');
 Route::get('/team', 'App\Http\Controllers\PagesController@team');
 Route::get('/website-design', 'App\Http\Controllers\PagesController@web');
+Route::get('/website-hosting', 'App\Http\Controllers\PagesController@hosting');
 Route::get('/social', 'App\Http\Controllers\PagesController@social');
 Route::get('/seo', 'App\Http\Controllers\PagesController@seo');
 Route::get('/video', 'App\Http\Controllers\PagesController@video');

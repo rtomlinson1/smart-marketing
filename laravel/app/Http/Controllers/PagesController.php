@@ -15,6 +15,9 @@ class PagesController extends Controller
     public function web(){
       return view('pages.web');
     }
+    public function hosting(){
+      return view('pages.hosting');
+    }
     public function social(){
       return view('pages.social');
     }
