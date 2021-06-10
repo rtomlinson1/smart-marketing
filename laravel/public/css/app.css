@@ -275,13 +275,22 @@ footer{
   color:white;
 }
 
+.service-menu-wrap{
+  background-color:#ff495c;
+}
+
+.footer-contact, .social-links, #footer-info{
+  width:90%;
+  margin:0 auto;
+}
+
 .services-menu{
   display:flex;
   margin:5px auto;
   padding:0px;
   justify-content:space-between;
   background-color:#ff495c;
-  width:100%;
+  width:90%;
   padding:15px;
 }
 
@@ -359,6 +368,47 @@ footer{
 /*small desktop & large tablet*/
 
 @media only screen and (min-width:800px) {
+  /*Header & Menu*/
+
+  nav{
+    max-width:1500px;
+    width: 80%;
+    margin:0px auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu-open{
+    display:none;
+  }
+
+  .logo-wrap{
+    width:17.5%;
+  }
+
+  .main-menu-wrap{
+    display:flex;
+    width:80%;
+    max-width:800px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right:0px;
+  }
+
+  /*Footer*/
+
+  .services-menu.desktop-flex{
+    max-width:1080px;
+    width:80%;
+  }
+
+  .footer-contact, .social-links, #footer-info{
+    width:80%;
+    max-width:1080px;
+    margin: 0 auto;
+  }
+
   .section{
     width:80%;
     max-width:1280px;
@@ -404,5 +454,10 @@ footer{
 /*Large Desktop*/
 
 @media only screen and (min-width:1300px) {
+  /*Footer*/
+
+  .services-menu.desktop-flex,.footer-contact, .social-links, #footer-info{
+    max-width:1280px;
+  }
 }
 

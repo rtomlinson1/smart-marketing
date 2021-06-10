@@ -13,6 +13,6 @@
     <a href="/video">Video</a>
     <a href="/design">Design</a>
     <a href="/church">Church</a>
-    <a href="/quote">Get Quote</a>
+    <a class="primary-button" href="/quote">Get Quote</a>
   </div>
 </nav>

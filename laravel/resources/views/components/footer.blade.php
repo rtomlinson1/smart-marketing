@@ -1,20 +1,24 @@
 <footer>
-  <ul class="services-menu desktop-flex">
-    <li><a href="/website-design">Website Design</a></li>
-    <li><a href="/website-hosting">Hosting</a></li>
-    <li><a href="/social">Social Media</a></li>
-    <li><a href="/seo">SEO</a></li>
-    <li><a href="/church">Church Media</a></li>
-    <li><a href="/video">Video</a></li>
-    <li><a href="/design">Graphic Design</a></li>
-  </ul>
-  <ul class="services-menu mobile-flex">
-    <li><a href="/website-design">Web</a></li>
-    <li><a href="/social">Social</a></li>
-    <li><a href="/seo">SEO</a></li>
-    <li><a href="/video">Video</a></li>
-    <li><a href="/design">Graphics</a></li>
-  </ul>
+  <div class="service-menu-wrap">
+    <ul class="services-menu desktop-flex">
+      <li><a href="/website-design">Website Design</a></li>
+      <li><a href="/website-hosting">Hosting</a></li>
+      <li><a href="/social">Social Media</a></li>
+      <li><a href="/seo">SEO</a></li>
+      <li><a href="/church">Church Media</a></li>
+      <li><a href="/video">Video</a></li>
+      <li><a href="/design">Graphic Design</a></li>
+    </ul>
+    <ul class="services-menu mobile-flex">
+      <li><a href="/website-design">Web</a></li>
+      <li><a href="/social">Social</a></li>
+      <li><a href="/seo">SEO</a></li>
+      <li><a href="/video">Video</a></li>
+      <li><a href="/design">Graphics</a></li>
+    </ul>
+  </div>
+
+
   <div class="footer-contact">
     <h5>Smart Marketing</h5>
     <p>1901 Sunset Dr. <br/>Poplar Bluff, Mo  63901</p>
