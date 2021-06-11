@@ -215,6 +215,9 @@ nav{
   width:0%;
   transition: width .2s ease-in-out;
 }
+.main-menu-wrap a.primary-button::after{
+  display: none!important;
+}
 .main-menu-wrap a:hover::after{
   width:100%;
 }
@@ -331,6 +334,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     margin-right:0px;
+    align-items: center;
   }
   /*Footer*/
 
