@@ -414,7 +414,7 @@ footer{
     margin: 0 auto;
   }
 
-  .section{
+  .section,section{
     width:80%;
     max-width:1280px;
     margin:0 auto;
