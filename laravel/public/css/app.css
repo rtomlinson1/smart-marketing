@@ -398,7 +398,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     margin-right:0px;
-    align-items: center;
+    align-items: baseline;
   }
 
   /*Footer*/
