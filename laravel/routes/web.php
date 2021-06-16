@@ -23,6 +23,7 @@ Route::get('/video', 'App\Http\Controllers\PagesController@video');
 Route::get('/design', 'App\Http\Controllers\PagesController@design');
 Route::get('/church', 'App\Http\Controllers\PagesController@church');
 Route::get('/quote', 'App\Http\Controllers\PagesController@quote');
+Route::get('/contact', 'App\Http\Controllers\PagesController@contact');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

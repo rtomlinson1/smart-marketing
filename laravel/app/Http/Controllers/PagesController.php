@@ -36,4 +36,7 @@ class PagesController extends Controller
     public function quote(){
       return view('pages.quote');
     }
+    public function contact(){
+      return view('pages.contact');
+    }
 }
