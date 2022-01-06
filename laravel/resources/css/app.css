@@ -303,6 +303,482 @@ footer{
 }
 
 
+  .is-flex{
+  	display:flex;
+  	justify-content: space-between;
+  	align-items: center;
+    max-width:100%;
+  }
+  .project-description{
+  	background-color: red;
+  	width:40%;
+  	height: 100%;
+  }
+
+  .imac-outer-wrap{
+  	position:relative;
+  	width:55%;
+  }
+  .imac-wrap{
+  margin-top:0px;
+  padding-top:100px;
+  position: relative;
+  height:200vh;
+  left:50%;
+
+
+  }
+/* The imac with borders */
+.imac {
+	margin:5px 0px;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+
+  position: sticky;
+  width: 80vw;
+	max-width:1366px;
+	height:50vw;
+  max-height: 768px;
+  border-radius: 30px 30px 25px 25px;
+  border-style: solid;
+  border-color: black;
+  border-width: 35px;
+  background:transparent;
+  top:25vh;
+}
+
+/* Stand */
+.imac:after {
+  content: '';
+  display: block;
+  position: absolute;
+	width:19vw;
+	height:14vw;
+  max-height: 202px;
+  left: calc(50% - 9.5vw);
+  margin: 80px auto;
+	background: #808080;
+	background: linear-gradient(to bottom, #808080 0%, #fafafa 54%, #fafafa 56%, #aaa 73%, #aaa 75%, #aaaaaa 85%, #ddd 95%,#ddd 95%, #dddddd 100%);
+  border-radius: 20px;
+	clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+}
+
+
+.imac-screen {
+
+	  background-clip: padding-box;
+  width: 100%;
+  height: 100%;
+	border: none!important;
+	padding-bottom:0px!important;
+	background-color: rgba(0,0,0,0);
+	overflow:hidden;
+}
+.imac-screen img{
+	padding:0px;
+	width:100%;
+
+}
+
+.apple-logo{
+	background: #cccccc;
+	  background: linear-gradient(to right, #cccccc 0%, #eeeeee 100%);
+		position: absolute;
+		width: calc(100% + 72px);
+		height:100px;
+		margin-left: -36px;
+		z-index: 2;
+		box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+		border-radius:0px 0px 30px 30px;
+		bottom:-85px;
+
+}
+.apple-logo > .fa-apple{
+	font-size:60px!important;
+	padding-top:15px;
+	text-align:center;
+	display: flex;
+	justify-content: center;
+}
+
+
+/****************************************************************/
+/*******************EXTERNAL LIBRARY CSS************************/
+/****************************************************************/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+
+/*
+	Containers
+*/
+#content-wrapper, #example-wrapper {
+	height: 100%;
+}
+.scrollContainer {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%
+}
+.scrollContainer {
+	height: 100%;
+	margin: auto;
+}
+#example-wrapper .scrollContent {
+	height: 100%;
+}
+
+.horizontal.scrollContainer {
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+#example-wrapper.scrollContainer .scrollContent {
+	width: 100%;
+	height: auto;
+}
+#example-wrapper.scrollContainer.horizontal .scrollContent {
+	width: auto;
+	height: 100%;
+}
+#example-wrapper.horizontal {
+	white-space: nowrap;
+	font-size: 0;  /* fix for spaces between inline block divs */
+}
+#example-wrapper.horizontal div {
+	font-size: 13px;
+}
+#example-wrapper .scrollContent, #example-wrapper.horizontal .scrollContent {
+	font-size: 0;
+}
+#example-wrapper .scrollContent div {
+	font-size: 13px;
+}
+#example-wrapper section {
+}
+
+section#titlechart {
+	text-align: center;
+	position: relative;
+	height: 100%;
+	min-height: 500px;
+	min-width: 100%;
+	height: 100vh;
+}
+.horizontal section, .horizontal section#titlechart{
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+}
+section#titlechart #description {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: -150px auto auto -300px;
+}
+section#titlechart.home #description {
+	padding-top: 0;
+	padding-bottom: 100px;
+}
+section#titlechart #description h1 {
+	margin: 0;
+}
+section#titlechart #description h2 {
+	margin-bottom: 20px;
+}
+section#titlechart #description a.viewsource {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+section#titlechart #description code {
+	background-color: #E1F1FF;
+	padding-left: 2px;
+	padding-right: 2px;
+	white-space: nowrap;
+}
+
+section#titlechart #description ol, section#titlechart #description p {
+	text-align: left;
+	max-width: 400px;
+	margin: 10px auto 10px auto;
+	white-space: normal;
+}
+section#titlechart #description ol {
+	list-style-position: outside;
+}
+#example-wrapper section#titlechart #description:after {
+	content: "↧";
+	font-size: 40px;
+	display: block;
+}
+#example-wrapper.horizontal section#titlechart #description:after {
+	content: "↦";
+}
+
+.box1, .box2, .box3 {
+	display: inline-block;
+	position: relative;
+	border-radius: 8px;
+	border: 0px solid white;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 5px;
+}
+.box1 {
+	min-width: 100px;
+	height: 100px;
+	margin: 0 auto 0 auto;
+}
+.box2 {
+	min-width: 50px;
+	height: 50px;
+	margin: 25px auto 25px auto;
+}
+.box3 {
+	min-width: 26px;
+	height: 26px;
+	margin: 37px auto 37px auto;
+}
+.horizontal .box1 {
+	top: 50%;
+	max-height: 100px;
+	margin: -50px 0 auto 0;
+}
+.horizontal .box2 {
+	top: 50%;
+	max-height: 50px;
+	margin: -25px 25px auto 25px;
+}
+.horizontal .box3 {
+	top: 50%;
+	max-height: 26px;
+	margin: -13px 37px auto 37px;
+}
+.box1 p, .box2 p, .box3 p {
+	margin: 5px 15px 5px 15px;
+	font-size: 13px;
+	font-weight: lighter;
+	color: white;
+}
+#reveal-elements .digit {
+	vertical-align: top;
+}
+#reveal-elements .digit p {
+	font-size: 35px;
+	font-weight: bold;
+}
+.box1 p:first-child {
+	margin-top: 27px;
+}
+.box1 a, .box2 a, .box3 a {
+	color: white;
+}
+.box1.white *, .box2.white *, .box3.white * {
+	color: #2e639e;
+}
+.box2.mario {
+	background-color: #004fae;
+	border-top: 30px solid #fc112f;
+	border-bottom: 10px solid #c4723b;
+}
+.box3.goomba {
+	min-width: 30px;
+	height: 4px;
+	margin-top: 75px;
+	margin-left: 30px;
+	margin-bottom: 25px;
+	background-color: #b39475;
+	border-top: 30px solid #744527;
+	border-bottom: 6px solid #c4723b;
+}
+/*
+	colors
+*/
+
+.box1.outline, .box2.outline, .box3.outline {
+	border: 1px solid white;
+}
+.blue {
+	background-color: #3883d8;
+}
+.turqoise {
+	background-color: #38ced7;
+}
+.brown {
+	background-color: #a66f28;
+}
+.bordeaux {
+	background-color: #953543;
+}
+.skin {
+	background-color: #ED9F4C;
+}
+.black {
+	background-color: #000000;
+}
+.white {
+	background-color: #FFFFFF;
+}
+.red {
+	background-color: #cf3535;
+}
+.green {
+	background-color: #22d659;
+}
+.orange {
+	background-color: #ea6300;
+}
+
+
+/*
+	Codecontainer
+*/
+#codecontainer {
+	position: fixed;
+	top: 30px;
+	bottom: 20px;
+	right: 20px;
+	left: 20px;
+	background-color: white;
+	border-radius: 4px;
+	z-index: 99999;
+	min-height: 300px;
+}
+#codecontainer pre {
+	margin: 0;
+	padding: 0;
+	line-height: 16px;
+	tab-size: 4;
+}
+#codecontainer pre .break {
+	background-color: #F6F6F6;
+	font-weight: bold;
+	color: #aaa;
+}
+#codecontainer pre .break:before {
+	content: "᎒"
+}
+#codecontainer .codewrap {
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	width: 100%;
+	overflow: hidden;
+	overflow: scroll;
+	white-space: nowrap;
+}
+#codecontainer .code, #codecontainer .linenumbers {
+	min-height: 100%;
+}
+#codecontainer .code {
+	padding: 0;
+	display: inline-block;
+}
+#codecontainer .code {
+	padding: 0 15px 10px 5px;
+}
+#codecontainer .linenumbers {
+	float: left;
+	padding: 0px 5px 0px 10px;
+	color: #aaa;
+	text-align: right;
+	border-right: 1px solid #e5e5e5;
+}
+#codecontainer span.indent {
+	width: 31px;
+	display: inline-block;
+	white-space: nowrap;
+}
+#codecontainer #close.button {
+	position: fixed;
+	top: 20px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+}
+#codecontainer #select.button {
+	position: fixed;
+	top: 20px;
+	right: 40px;
+	height: 20px;
+	padding: 0 10px 0 10px;
+}
+#codecontainer #close.button:after {
+	content: "྾";
+}
+#codecontainer .button {
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	cursor: pointer;
+	color: #2e639e;
+}
+#codecontainer .button:hover {
+	background-color: #3883d8;
+	color: white;
+}
+
+/*
+	OTHER
+*/
+a.viewsource:after {
+	content: " }";
+}
+a.viewsource:before {
+	content: "{ ";
+}
+
+
+
+
+.demo#section-slides, .demo#section-wipes {
+	height: 100%;
+	width: 100%;
+	background-image: none;
+}
+.demo#section-slides .panel, .demo#section-wipes .panel {
+
+}
+.demo#section-wipes #pinContainer .turqoise, .demo#section-wipes #pinContainer .green, .demo#section-slides #slideContainer .panel {
+
+}
+.demo#section-slides .panel > b, .demo#section-wipes .panel > b {
+	font-size: 15px;
+	color: white;
+	position: relative;
+	display: block;
+	height: 0;
+	overflow: visible;
+	top: 50%;
+}
+
+/****************************************************************/
+/******************END EXTERNAL LIBRARY CSS**********************/
+/***************************************************************/
+
+
 /*Media Queries*/
 
 /*ipad styles*/

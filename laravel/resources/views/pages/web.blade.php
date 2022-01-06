@@ -28,6 +28,31 @@
     </div>
   </section>
   <section>
+    <div class="is-flex">
+      <div class="imac-outer-wrap">
+        <div class="background-cover">
+
+          <div class="imac-wrap">
+            <div class="imac">
+              <div class="imac-screen">
+                <img class="scroll-img-1" src="/bankwithsouthern-mx.jpg" alt="">
+              </div>
+              <div class="apple-logo">
+                <i class="fab fa-apple"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sb-content project-description">
+        <h1>Southern Bank</h1>
+        <h3>Core Objective:</h3>
+        <p>Smart Marketing was tasked with rebuilding Southern Bank’s entire client-side web presence. Southern Bank was refreshing their branding from the ground up, with new products, a new tone, and even some new colors -- all while maintaining their core values as a local bank with big possibilities.</p>
+      </div>
+    </div>
+  </section>
+  <section>
     <h2>Our Favorite Projects</h2>
     <h5>The Landing</h5>
     <h5>Smart Space Office</h5>
@@ -38,4 +63,37 @@
   </section>
 
 </div>
+<script>
+		// init
+		var controller = new ScrollMagic.Controller();
+
+		// define movement of panels
+		var wipeAnimation = new TimelineMax()
+			.fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+			.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+			.fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+
+		// create scene to pin and link animation
+		new ScrollMagic.Scene({
+				triggerElement: "#pinContainer",
+				triggerHook: "onLeave",
+				duration: "1000%"
+			})
+			.setPin("#pinContainer")
+			.setTween(wipeAnimation)
+			// .addIndicators() // add indicators (requires plugin)
+			.addTo(controller);
+
+
+</script>
+<script type="text/javascript">
+var image = document.getElementsByClassName('scroll-img-1');
+new simpleParallax(image, {
+delay: .6,
+scale: 1.82,
+
+transition: 'cubic-bezier(0,0,0,1)'
+});
+
+</script>
 @endsection
