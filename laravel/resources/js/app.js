@@ -22,4 +22,10 @@ window.onload = function() {
   }
   getNavButton.addEventListener("click", openMenu);
 
+  var brandAnimation = document.querySelector(".web-panel");
+  var innerPanels = document.querySelectorAll(".panel");
+
+  brandAnimation.addEventListener("animationend", function() {
+		brandAnimation.classList.add("panel-remove");
+  });
 };
