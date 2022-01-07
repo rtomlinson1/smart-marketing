@@ -27,15 +27,15 @@
       <p>Our maintenance packages are customized to your business need as well. Standard maintenance includes plugin and security updates, as well as small updates to your site, such as new slides, photos, or pricing updates. If your site requires large or frequent updates, we will work with you to provide a solution that <span class="standout">adds value</span> to your business.</p>
     </div>
   </section>
-  <section>
+  <section class="is-100">
     <div class="is-flex">
       <div class="imac-outer-wrap">
         <div class="background-cover">
 
           <div class="imac-wrap">
             <div class="imac">
-              <div class="imac-screen">
-                <img class="scroll-img-1" src="/bankwithsouthern-mx.jpg" alt="">
+              <div id="scrolling-screen-1" class="imac-screen">
+                <img  class="scroll-img-1" src="/images/websites/bankwithsouthern-mx.jpg" alt="">
               </div>
               <div class="apple-logo">
                 <i class="fab fa-apple"></i>
@@ -45,10 +45,29 @@
           </div>
         </div>
       </div>
-      <div class="sb-content project-description">
-        <h1>Southern Bank</h1>
-        <h3>Core Objective:</h3>
-        <p>Smart Marketing was tasked with rebuilding Southern Bank’s entire client-side web presence. Southern Bank was refreshing their branding from the ground up, with new products, a new tone, and even some new colors -- all while maintaining their core values as a local bank with big possibilities.</p>
+      <div id="scrolling-content-1" class="sb-content project-description">
+        <div class="southern-bank">
+          <h1>Southern Bank</h1>
+          <h3>Core Objective:</h3>
+          <p>Smart Marketing was tasked with rebuilding Southern Bank’s entire client-side web presence. Southern Bank was refreshing their branding from the ground up, with new products, a new tone, and even some new colors -- all while maintaining their core values as a local bank with big possibilities.</p>
+          <h3>Our Part:</h3>
+          <p>Southern’s marketing department worked with other consultants to create a new “brand voice” for the bank, capturing the idea of thinking big while staying local, and combining modern design patterns with a classic elegance. Smart Marketing was brought on to translate that design from a series of conceptual mockups to the 80+ pages that the website has today. Over the course of 4 months, our team worked with Southern and their consultants to complete the site and compliance revisions on-time, and on-budget.</p>
+          <h3>Technical Challenges:</h3>
+          <p>While we take care to ensure the security of all our client’s websites, the nature of this site, in particular, requires more stringent protocols. Their dedicated servers underwent extensive hardening procedures, and are protected by layers of network level security and redundancy. Southern’s strict requirements compelled our team to find a creative solution, offering both the security of a static site, and the simplicity of updating a CMS. We settled on using a framework that allowed us to build locally, and export a final static site after changes are made. The finished product is both secure and fast loading, while still adhering to the exact specifications of the brand guidelines.</p>
+          <h3>What we did:</h3>
+          <p>Wherever a client lands on bankwithsouthern.com, they are guided to the information they need to make a decision. Each page has a purpose; each call to action has a goal. The current site is a showcase of what can happen when a web presence is designed to answer questions, not just to look impressive. We are proud of the part we played in bringing Southern’s new branding to the web. We believe the site is beautiful, functional, secure and able to convey the ideals of Southern Bank to their current and potential clients.</p>
+        </div>
+        <div class="manulife">
+          <h1>Manulife Parking App</h1>
+          <h3>Core Objective:</h3>
+          <p>Manufacturer’s Life Insurance Company (Manulife) has a large parking area at their main campus. They partnered with HubParking to install parking lot sensors and signage in their parking garage and open parking areas. These sensors allow customers and employees to see parking availability as they drive onto the campus. Through our partnership with Indect (the manufacturer of the sensors) and HubParking (the implementation partner for the signage and sensors), our task was to create a website that could retrieve data from the parking sensors, and display it live for people who are planning to visit.</p>
+
+          <h3>Technical Challenges:</h3>
+          <p>The application needed to be very fast loading, look good and provide all of the parking lot information on an area that fits on a single phone screen. The information needed to automatically refresh on a periodic basis. Finally, we needed to create a map that provided the location of each lot and sub-lot in a user friendly way. </p>
+          <h3>What we did:</h3>
+          <p>Working directly with our partner Indect, we were able to interface with the parking lot server and retrieve live data from it. This raw data gave us the total number of spaces for each section and sub-section, as well as the total number of occupied spaces. From this data, we were able to calculate the available spaces and overlay that information onto a single phone screen.</p>
+          <p>We started with a design that fit with Manulife’s current branding. We went through iterations of this design to come up with a way to show all the data on small devices. We used a series of “progress bar” styled meters to show how full each area was, with an updating number count displayed above the line. We then translated the paper chart of shuttle times into an easily readable mobile-friendly table. Finally we created a sharp, branded graphic to show guests how to get to each lot, and added links to get directions and to download the pdf versions of the map and shuttle schedule.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -65,24 +84,24 @@
 </div>
 <script>
 		// init
-		var controller = new ScrollMagic.Controller();
-
-		// define movement of panels
-		var wipeAnimation = new TimelineMax()
-			.fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-			.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-			.fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
-
-		// create scene to pin and link animation
-		new ScrollMagic.Scene({
-				triggerElement: "#pinContainer",
-				triggerHook: "onLeave",
-				duration: "1000%"
-			})
-			.setPin("#pinContainer")
-			.setTween(wipeAnimation)
-			// .addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
+		// var controller = new ScrollMagic.Controller();
+    //
+		// // define movement of panels
+		// var wipeAnimation = new TimelineMax()
+		// 	.fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+		// 	.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+		// 	.fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+    //
+		// // create scene to pin and link animation
+		// new ScrollMagic.Scene({
+		// 		triggerElement: "#pinContainer",
+		// 		triggerHook: "onLeave",
+		// 		duration: "1000%"
+		// 	})
+		// 	.setPin("#pinContainer")
+		// 	.setTween(wipeAnimation)
+		// 	.addIndicators() // add indicators (requires plugin)
+		// 	.addTo(controller);
 
 
 </script>
