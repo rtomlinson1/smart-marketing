@@ -16,4 +16,4 @@ mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'pub
     require('tailwindcss'),
     require('autoprefixer'),
 
-]).browserSync('http://localhost:8001');
+]).browserSync('http://localhost:8000');
