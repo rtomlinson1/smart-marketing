@@ -310,7 +310,6 @@ footer{
     max-width:100%;
   }
   .project-description{
-  	background-color: red;
   	width:40%;
   	height: 100%;
   }
@@ -527,13 +526,12 @@ footer{
 	margin:5px 0px;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
-  transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
-
+  -webkit-transform: scale(.6) translate(-60%);
+  transform: scale(.6) translate(-60%);
   position: sticky;
-  width: 80vw;
+  width: 72vw;
 	max-width:1366px;
-	height:50vw;
+	height:45vw;
   max-height: 768px;
   border-radius: 30px 30px 25px 25px;
   border-style: solid;
