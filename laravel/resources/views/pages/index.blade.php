@@ -1,67 +1,7 @@
 @extends('layouts.page')
 
 @section('content')
-
 <div class="content-wrap">
-  <div class="panels">
-    <div class="panel-wrap">
-      <div class="panel web-panel">
-        <div class="panel-front">
-          <h2>Web</h2>
-        </div>
-        <div class="panel-back smartbluebg">
-
-        </div>
-      </div>
-      <div class="panel design-panel">
-        <div class="panel-front">
-          <h2>Design</h2>
-        </div>
-        <div class="panel-back smartbluebg">
-          <h2 class="big-letter">B</h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel-wrap">
-      <div class="panel social-panel">
-        <div class="panel-front">
-          <h2>Social</h2>
-        </div>
-        <div class="panel-back smartbluebg">
-          <h2 class="big-letter">R</h2>
-        </div>
-      </div>
-      <div class="panel video-panel">
-        <div class="panel-front">
-          <h2>Video</h2>
-        </div>
-        <div class="panel-back smartbluebg">
-          <h2 class="big-letter">A</h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel-wrap">
-      <div class="panel seo-panel">
-        <div class="panel-front">
-          <h2>SEO</h2>
-        </div>
-        <div class="panel-back smartbluebg">
-          <h2 class="big-letter">N</h2>
-        </div>
-      </div>
-      <div class="panel branding-panel">
-        <div class="panel-front">
-          <h2>Branding</h2>
-        </div>
-        <div class="panel-back smartbluebg">
-          <h2 class="big-letter">D</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="section">
     <div class="">
       <h1>How are you marketing <span id="marketing-items" class="standout">yourself?</span></h1>
@@ -102,5 +42,4 @@
   </div>
 
 </div>
-
 @endsection
