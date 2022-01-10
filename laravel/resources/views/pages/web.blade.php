@@ -31,7 +31,6 @@
     <div class="is-flex">
       <div class="imac-outer-wrap">
         <div class="background-cover">
-
           <div class="imac-wrap">
             <div class="imac">
               <div id="scrolling-screen-1" class="imac-screen">
@@ -45,7 +44,7 @@
           </div>
         </div>
       </div>
-      <div id="scrolling-content-1" class="sb-content project-description">
+      <div class="sb-content project-description">
         <div class="southern-bank">
           <h1>Southern Bank</h1>
           <h3>Core Objective:</h3>

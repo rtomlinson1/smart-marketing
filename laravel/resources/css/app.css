@@ -314,19 +314,6 @@ footer{
   	height: 100%;
   }
 
-  .imac-outer-wrap{
-  	position:relative;
-  	width:55%;
-  }
-  .imac-wrap{
-  margin-top:0px;
-  padding-top:100px;
-  position: relative;
-  height:200vh;
-  left:50%;
-
-
-  }
   /* Homepage panel elements */
   .panels{
     margin-top: 20px;
@@ -522,6 +509,18 @@ footer{
 
   /* The imac with borders */
 
+  .imac-outer-wrap{
+  	position:relative;
+  	width:55%;
+  }
+  .imac-wrap{
+  margin-top:0px;
+  padding-top:100px;
+  position: relative;
+  height:200vh;
+  left:50%;
+  }
+
   .imac {
 	margin:5px 0px;
   -webkit-transform-origin: 0 0;
@@ -571,7 +570,6 @@ footer{
 .imac-screen img{
 	padding:0px;
 	width:100%;
-
 }
 
 .apple-logo{
