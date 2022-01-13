@@ -4043,22 +4043,40 @@ window.onload = function () {
   }
 
   getNavButton.addEventListener("click", openMenu);
-  var webPanel = document.querySelector(".web-panel");
-  var designPanel = document.querySelector(".design-panel");
-  var innerPanels = document.querySelectorAll(".panel");
-  var panelWrap = document.querySelector(".panels");
-  var panelInnerWrap = document.querySelectorAll(".panel-wrap");
-  var brandingPanel = document.querySelector(".branding-panel .panel-back");
-  brandingPanel.addEventListener("animationend", function () {
-    webPanel.classList.add("panel-remove");
-    innerPanels.forEach(function (panel, i) {
-      panel.classList.add("panel-shrink");
+  /*Only homepage*/
+
+  var mobileWebPanel = document.querySelector(".is-mobile-only .web-panel");
+
+  if (mobileWebPanel) {
+    var desktopWebPanel = document.querySelector(".is-desktop-only .web-panel");
+    var designPanel = document.querySelector(".design-panel");
+    var innerPanels = document.querySelectorAll(".panel");
+    var mobilePanelWrap = document.querySelector(".panels.is-mobile-only");
+    var desktopPanelWrap = document.querySelector("div.panels.is-desktop-only");
+    var panelInnerWrap = document.querySelectorAll(".panel-wrap");
+    var mobileBrandingPanel = document.querySelector(".is-mobile-only .branding-panel .panel-back");
+    var desktopBrandingPanel = document.querySelector(".is-desktop-only .branding-panel .panel-back");
+    mobileBrandingPanel.addEventListener("animationend", function () {
+      mobileWebPanel.classList.add("panel-remove");
+      innerPanels.forEach(function (panel, i) {
+        panel.classList.add("panel-shrink");
+      });
+      panelInnerWrap.forEach(function (panelW, i) {
+        panelW.classList.add("panel-wrap-shrink");
+      });
+      mobilePanelWrap.classList.add("panel-collapse");
     });
-    panelInnerWrap.forEach(function (panelW, i) {
-      panelW.classList.add("panel-wrap-shrink");
+    desktopBrandingPanel.addEventListener("animationend", function () {
+      desktopWebPanel.classList.add("panel-remove");
+      innerPanels.forEach(function (panel, i) {
+        panel.classList.add("panel-shrink");
+      });
+      panelInnerWrap.forEach(function (panelW, i) {
+        panelW.classList.add("panel-wrap-shrink");
+      });
+      desktopPanelWrap.classList.add("panel-collapse");
     });
-    panelWrap.classList.add("panel-collapse");
-  });
+  }
 };
 
 /***/ }),

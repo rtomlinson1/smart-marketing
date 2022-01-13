@@ -12,6 +12,7 @@
   <section>
     <div class="subpage-main-content">
       <h2>Need a fresh website?</h2>
+      <img class="image-space" src="/images/online-purchase-on-laptop.jpg" alt="">
       <p>It's so important to make a good impression. Are your potential customers able to quickly find what they need to know about you online? If you don't provide authoritative information about yourself online, the internet will try to do it for you, often creating misinformation that is difficult to remove or correct.</p>
       <p>Unfortunately, simply <em>having</em> the correct information is no longer good enough. Studies show that after only 3 seconds <span class="standout">53% of visitors will move on</span> from a website that hasn't loaded. You have to be fast. You have to be engaging.</p>
       <p>On top of all this, your website doesn't exist in a vacuum. You have competition, and everyone wants to be #1 in search results. You don't just have to be good, you have to <span class="standout">be better</span> than your competitors. <strong>That's where we come in.</strong></p>
@@ -28,8 +29,8 @@
     </div>
   </section>
   <section class="is-100">
-    <div class="is-flex">
-      <div class="imac-outer-wrap">
+    <div class="is-flex align-top ">
+      <div class="imac-outer-wrap is-desktop-only">
         <div class="background-cover">
           <div class="imac-wrap">
             <div class="imac">
@@ -45,8 +46,10 @@
         </div>
       </div>
       <div class="sb-content project-description">
+
         <div class="southern-bank">
           <h1>Southern Bank</h1>
+          <img src="/images/websites/southern-mobile.jpg" alt="">
           <h3>Core Objective:</h3>
           <p>Smart Marketing was tasked with rebuilding Southern Bank’s entire client-side web presence. Southern Bank was refreshing their branding from the ground up, with new products, a new tone, and even some new colors -- all while maintaining their core values as a local bank with big possibilities.</p>
           <h3>Our Part:</h3>
@@ -58,6 +61,7 @@
         </div>
         <div class="manulife">
           <h1>Manulife Parking App</h1>
+          <img src="/images/websites/manulife.jpg" alt="">
           <h3>Core Objective:</h3>
           <p>Manufacturer’s Life Insurance Company (Manulife) has a large parking area at their main campus. They partnered with HubParking to install parking lot sensors and signage in their parking garage and open parking areas. These sensors allow customers and employees to see parking availability as they drive onto the campus. Through our partnership with Indect (the manufacturer of the sensors) and HubParking (the implementation partner for the signage and sensors), our task was to create a website that could retrieve data from the parking sensors, and display it live for people who are planning to visit.</p>
 
@@ -66,48 +70,20 @@
           <h3>What we did:</h3>
           <p>Working directly with our partner Indect, we were able to interface with the parking lot server and retrieve live data from it. This raw data gave us the total number of spaces for each section and sub-section, as well as the total number of occupied spaces. From this data, we were able to calculate the available spaces and overlay that information onto a single phone screen.</p>
           <p>We started with a design that fit with Manulife’s current branding. We went through iterations of this design to come up with a way to show all the data on small devices. We used a series of “progress bar” styled meters to show how full each area was, with an updating number count displayed above the line. We then translated the paper chart of shuttle times into an easily readable mobile-friendly table. Finally we created a sharp, branded graphic to show guests how to get to each lot, and added links to get directions and to download the pdf versions of the map and shuttle schedule.</p>
+          <div class="text-link not-black">
+            <a href="/social"><strong>See More Projects ></strong></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section>
-    <h2>Our Favorite Projects</h2>
-    <h5>The Landing</h5>
-    <h5>Smart Space Office</h5>
-    <h5>Southern Bank</h5>
-    <h5>Manulife Parking App</h5>
-    <h5>See the Ozarks</h5>
-    <h5>CoreTN</h5>
-  </section>
 
 </div>
-<script>
-		init
-		var controller = new ScrollMagic.Controller();
 
-		// define movement of panels
-		var wipeAnimation = new TimelineMax()
-			.fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-			.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-			.fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
-
-		// create scene to pin and link animation
-		new ScrollMagic.Scene({
-				triggerElement: "#pinContainer",
-				triggerHook: "onLeave",
-				duration: "1000%"
-			})
-			.setPin("#pinContainer")
-			.setTween(wipeAnimation)
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-
-
-</script>
 <script type="text/javascript">
 var image = document.getElementsByClassName('scroll-img-1');
 new simpleParallax(image, {
-delay: .6,
+delay: .8,
 scale: 1.82,
 
 transition: 'cubic-bezier(0,0,0,1)'
