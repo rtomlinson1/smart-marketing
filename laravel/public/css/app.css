@@ -789,6 +789,10 @@ footer{
   margin:30px auto;
 }
 
+.imac-outer-wrap{
+  display:none;
+}
+
 /****************************************************************/
 
 /*******************EXTERNAL LIBRARY CSS************************/
@@ -1251,6 +1255,8 @@ a.viewsource:before {
     display:inherit;
   }
 
+  /* *{border: 1px solid red;} */
+
   /*Header & Menu*/
 
   nav{
@@ -1326,6 +1332,10 @@ a.viewsource:before {
 /*Desktop*/
 
 @media only screen and (min-width:981px) {
+  .mobile-image{
+    display:none;
+  }
+
   p,a{
     font-size: 14pt;
   }
@@ -1334,8 +1344,12 @@ a.viewsource:before {
     display:flex;
   }
 
-  .content-wrap section{
+  .content-wrap {
     margin:0px;
+  }
+
+  .content-wrap section, .section{
+    margin: 0 auto;
   }
 
   .mobile-flex{
@@ -1345,16 +1359,21 @@ a.viewsource:before {
   /* The imac with borders */
 
   .imac-outer-wrap{
+    display:flex;
+    align-items: stretch;
+    justify-content: flex-start;
     position:relative;
     width:55%;
   }
 
   .imac-wrap{
-    margin-top:0px;
-    padding-top:100px;
+    margin-top: 0px;
+    padding-top: 100px;
     position: relative;
-    height:200vh;
-    left:50%;
+    height: 200vh;
+    left: 40%;
+    max-width: 800px;
+    width: 50%;
   }
 
   .imac {
